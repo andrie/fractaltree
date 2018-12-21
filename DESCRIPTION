@@ -1,0 +1,16 @@
+Package: fractaltree
+Title: Creates fractal trees for plotting
+Version: 0.0.0.9000
+Authors@R: person("Andrie", "de Vries", email = "apdevries@gmail.com", role = c("aut", "cre"))
+Description: Visualize neural net architectures using the "ggraph" package. 
+    Creates and plots a graph using the layer and node information.  Right now
+    only supports densely connected layers.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    magrittr,
+    ggplot2
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+VignetteBuilder: rmarkdown
