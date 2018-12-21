@@ -30,7 +30,7 @@ leaf <- local({
   )
 })
 
-tree <- fractal_tree(leaf, depth = 3, shrink_fraction = 1)
+tree <- fractal_tree(leaf, depth = 3, growth_fraction = 1)
 
 tree %>% 
   filter(i <= 1) %>% 
@@ -60,13 +60,13 @@ devtools::install_github("andrie/fractaltree")
 You can use the `depth` argument to change the number of growth cycles, and the `shrinkage_factor` to control how much growth with every generation.  If the growth is high, the resulting image may resemble a shrub, and if the growth is low, the resulting image may resemble a mature tree.
 
 ```{r, fig.keep='all'}
-fractal_tree(leaf, depth = 5, shrink_fraction = 1) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 1) %>% 
   plot_tree()
 
-fractal_tree(leaf, depth = 5, shrink_fraction = 0.75) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 0.75) %>% 
   plot_tree()
 
-fractal_tree(leaf, depth = 5, shrink_fraction = 0.5) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 0.5) %>% 
   plot_tree()
 
 
@@ -89,7 +89,35 @@ leaf %>%
   plot_tree()
 
 leaf %>% 
-  fractal_tree(depth = 7, shrink_fraction = 0.6) %>% 
+  fractal_tree(depth = 7, growth_fraction = 0.6) %>% 
   plot_tree()
+
+```
+
+## Translate, rotate and grow
+
+You can use the functions `translate()`, `rotate()` and `shrink()` to perform spatial transformation on a tree.
+
+## Kaleidoscope
+
+In addition you can use the `kaleidoscope()` function to turn a tree into a symmetric diagram:
+
+```{r}
+leaf %>% 
+  fractal_tree(depth = 3, growth_fraction = 0.8) %>% 
+  kaleidoscope() %>% 
+  plot_tree(colors = c( "red", "blue"))
+
+```
+
+By first translating a tree in 2-dimensional space, using the `translate()` function, you can create very interesting `kaleidoscope()` images:
+
+```{r}
+leaf %>% 
+  fractal_tree(depth = 3, growth_fraction = 0.8) %>% 
+  kaleidoscope() %>% 
+  translate(c(0, 5)) %>% 
+  kaleidoscope() %>% 
+  plot_tree(colors = c( "red", "blue"))
 
 ```

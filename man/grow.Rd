@@ -4,14 +4,14 @@
 \alias{grow}
 \title{Grow a branch}
 \usage{
-grow(m, leaf, shrink_fraction = 1)
+grow(m, leaf, growth_fraction = 1)
 }
 \arguments{
 \item{m}{input matrix of}
 
 \item{leaf}{leaf shape, a matrix with 4 columns for x, y, xend, yend}
 
-\item{shrink_fraction}{}
+\item{growth_fraction}{}
 }
 \description{
 Grow a branch

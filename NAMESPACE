@@ -2,6 +2,7 @@
 
 export(fractal_tree)
 export(grow)
+export(kaleidoscope)
 export(plot_tree)
 export(rotate)
 export(shrink)

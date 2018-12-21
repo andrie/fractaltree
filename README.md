@@ -23,7 +23,7 @@ shrub, and if the growth is low, the resulting image may resemble a
 mature tree.
 
 ``` r
-fractal_tree(leaf, depth = 5, shrink_fraction = 1) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 1) %>% 
   plot_tree()
 ```
 
@@ -31,7 +31,7 @@ fractal_tree(leaf, depth = 5, shrink_fraction = 1) %>%
 
 ``` r
 
-fractal_tree(leaf, depth = 5, shrink_fraction = 0.75) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 0.75) %>% 
   plot_tree()
 ```
 
@@ -39,7 +39,7 @@ fractal_tree(leaf, depth = 5, shrink_fraction = 0.75) %>%
 
 ``` r
 
-fractal_tree(leaf, depth = 5, shrink_fraction = 0.5) %>% 
+fractal_tree(leaf, depth = 5, growth_fraction = 0.5) %>% 
   plot_tree()
 ```
 
@@ -67,8 +67,42 @@ leaf %>%
 ``` r
 
 leaf %>% 
-  fractal_tree(depth = 7, shrink_fraction = 0.6) %>% 
+  fractal_tree(depth = 7, growth_fraction = 0.6) %>% 
   plot_tree()
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-2.png" width="100%" />
+
+## Translate, rotate and grow
+
+You can use the functions `translate()`, `rotate()` and `shrink()` to
+perform spatial transformation on a tree.
+
+## Kaleidoscope
+
+In addition you can use the `kaleidoscope()` function to turn a tree
+into a symmetric diagram:
+
+``` r
+leaf %>% 
+  fractal_tree(depth = 3, growth_fraction = 0.8) %>% 
+  kaleidoscope() %>% 
+  plot_tree(colors = c( "red", "blue"))
+```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+
+By first translating a tree in 2-dimensional space, using the
+`translate()` function, you can create very interesting `kaleidoscope()`
+images:
+
+``` r
+leaf %>% 
+  fractal_tree(depth = 3, growth_fraction = 0.8) %>% 
+  kaleidoscope() %>% 
+  translate(c(0, 5)) %>% 
+  kaleidoscope() %>% 
+  plot_tree(colors = c( "red", "blue"))
+```
+
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />

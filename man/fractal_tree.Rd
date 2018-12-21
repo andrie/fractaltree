@@ -4,14 +4,14 @@
 \alias{fractal_tree}
 \title{Grow a tree}
 \usage{
-fractal_tree(leaf, depth, shrink_fraction)
+fractal_tree(leaf, depth, growth_fraction)
 }
 \arguments{
 \item{leaf}{leaf shape, a matrix with 4 columns for x, y, xend, yend}
 
 \item{depth}{Integer that specifies the depth (height) of the tree, i.e. the number of loops}
 
-\item{shrink_fraction}{}
+\item{growth_fraction}{}
 }
 \description{
 Grow a tree

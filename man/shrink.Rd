@@ -15,7 +15,7 @@ shrink(m, s = 0)
 Shrink object
 }
 \seealso{
-Other Rotate, translate and shrink: \code{\link{rotate}},
-  \code{\link{translate}}
+Other Rotate, translate and shrink: \code{\link{kaleidoscope}},
+  \code{\link{rotate}}, \code{\link{translate}}
 }
 \concept{Rotate, translate and shrink}
