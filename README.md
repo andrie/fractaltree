@@ -6,7 +6,7 @@
 The goal of fractaltree is to plot trees as fractals. Using the shape of
 a single “leaf”, every subsequent growht takes the same shape.
 
-<img src="man/figures/README-unnamed-chunk-1-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-1-1.png" width="60%" />
 
 ## Installation
 
@@ -27,7 +27,7 @@ fractal_tree(leaf, depth = 5, growth_fraction = 1) %>%
   plot_tree()
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="60%" />
 
 ``` r
 
@@ -35,7 +35,7 @@ fractal_tree(leaf, depth = 5, growth_fraction = 0.75) %>%
   plot_tree()
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-2.png" width="60%" />
 
 ``` r
 
@@ -43,7 +43,7 @@ fractal_tree(leaf, depth = 5, growth_fraction = 0.5) %>%
   plot_tree()
 ```
 
-<img src="man/figures/README-unnamed-chunk-2-3.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-2-3.png" width="60%" />
 
 You can make interesting tree shapes if the leaf shape is asymmetric:
 
@@ -62,7 +62,7 @@ leaf %>%
   plot_tree()
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="60%" />
 
 ``` r
 
@@ -71,7 +71,7 @@ leaf %>%
   plot_tree()
 ```
 
-<img src="man/figures/README-unnamed-chunk-3-2.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-3-2.png" width="60%" />
 
 ## Translate, rotate and grow
 
@@ -90,7 +90,7 @@ leaf %>%
   plot_tree(colors = c( "red", "blue"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="60%" />
 
 By first translating a tree in 2-dimensional space, using the
 `translate()` function, you can create very interesting `kaleidoscope()`
@@ -105,4 +105,4 @@ leaf %>%
   plot_tree(colors = c( "red", "blue"))
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="60%" />
