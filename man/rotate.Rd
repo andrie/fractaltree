@@ -13,11 +13,16 @@ rotate(m, theta = 0, radians = FALSE)
 
 \item{radians}{If TRUE theta is radians, otherwise degrees}
 }
+\value{
+
+}
 \description{
 Rotate object using matrix algebra.
 }
 \seealso{
-Other Rotate, translate and shrink: \code{\link{kaleidoscope}},
-  \code{\link{shrink}}, \code{\link{translate}}
+Other Rotate, translate and shrink: 
+\code{\link{kaleidoscope}()},
+\code{\link{shrink}()},
+\code{\link{translate}()}
 }
 \concept{Rotate, translate and shrink}

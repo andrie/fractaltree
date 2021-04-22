@@ -13,6 +13,9 @@ plot_tree(x, colors = c("brown", "darkgreen"), colours = colors)
 
 \item{colours}{}
 }
+\value{
+
+}
 \description{
 Plot the tree
 }

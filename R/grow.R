@@ -8,7 +8,6 @@
 #' @return
 #' @export
 #'
-#' @examples
 grow <- function(m, leaf, growth_fraction = 1){
   angle <- atan2(m[, 4] - m[, 2] , m[, 3] - m[, 1]) + pi / 2
   shrunken_leaf <- leaf %>% shrink(growth_fraction)
@@ -32,7 +31,6 @@ leaf_names <- function(m){
 #' @return
 #' @export
 #'
-#' @examples
 fractal_tree <- function(leaf, depth, growth_fraction){
   edges <- list()
   edges[[1]] <- leaf %>% cbind(1)
@@ -58,7 +56,6 @@ fractal_tree <- function(leaf, depth, growth_fraction){
 #' @return
 #' @export
 #'
-#' @examples
 #' @importFrom ggplot2 ggplot geom_segment coord_fixed theme_void scale_color_gradient aes
 plot_tree <- function(x, colors = c("brown", "darkgreen"), colours = colors){
   x %>%

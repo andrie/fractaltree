@@ -13,6 +13,9 @@ fractal_tree(leaf, depth, growth_fraction)
 
 \item{growth_fraction}{}
 }
+\value{
+
+}
 \description{
 Grow a tree
 }

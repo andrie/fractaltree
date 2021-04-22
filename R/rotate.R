@@ -40,7 +40,6 @@ rotate <- function(m, theta = 0, radians = FALSE){
 #' @return
 #' @export
 #'
-#' @examples
 #' @family Rotate, translate and shrink
 shrink <- function(m, s = 0){
   m[, 1:4] <- m[, 1:4] * s
@@ -56,7 +55,6 @@ shrink <- function(m, s = 0){
 #' @return
 #' @export
 #'
-#' @examples
 #' @family Rotate, translate and shrink
 translate <- function(m, xy) {
   m[, 1:4] <- m[, 1:4] + matrix(
@@ -76,7 +74,6 @@ translate <- function(m, xy) {
 #' @return
 #' @export
 #'
-#' @examples
 #' @family Rotate, translate and shrink
 kaleidoscope <- function(m, n){
   if (missing(n) || is.null(n)) {

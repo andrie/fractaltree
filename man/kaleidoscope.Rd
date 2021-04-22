@@ -11,11 +11,16 @@ kaleidoscope(m, n)
 
 \item{xy}{a Vector of length two with x and y component}
 }
+\value{
+
+}
 \description{
 Translate object in x and y plane
 }
 \seealso{
-Other Rotate, translate and shrink: \code{\link{rotate}},
-  \code{\link{shrink}}, \code{\link{translate}}
+Other Rotate, translate and shrink: 
+\code{\link{rotate}()},
+\code{\link{shrink}()},
+\code{\link{translate}()}
 }
 \concept{Rotate, translate and shrink}

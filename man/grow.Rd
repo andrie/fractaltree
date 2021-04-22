@@ -13,6 +13,9 @@ grow(m, leaf, growth_fraction = 1)
 
 \item{growth_fraction}{}
 }
+\value{
+
+}
 \description{
 Grow a branch
 }
