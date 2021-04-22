@@ -9,12 +9,12 @@ plot_tree(x, colors = c("brown", "darkgreen"), colours = colors)
 \arguments{
 \item{x}{A tree object, resulting from \code{grow_tree()}}
 
-\item{colors}{A vector of lenght two with start and end colour}
+\item{colors}{A vector of length two with start and end color}
 
-\item{colours}{}
+\item{colours}{A synonym for \code{color}}
 }
 \value{
-
+foo
 }
 \description{
 Plot the tree

@@ -11,10 +11,10 @@ grow(m, leaf, growth_fraction = 1)
 
 \item{leaf}{leaf shape, a matrix with 4 columns for x, y, xend, yend}
 
-\item{growth_fraction}{}
+\item{growth_fraction}{How much to grow each leaf}
 }
 \value{
-
+foo
 }
 \description{
 Grow a branch

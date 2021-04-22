@@ -12,7 +12,7 @@ shrink(m, s = 0)
 \item{s}{scaling factor}
 }
 \value{
-
+foo
 }
 \description{
 Shrink object

@@ -14,7 +14,7 @@ rotate(m, theta = 0, radians = FALSE)
 \item{radians}{If TRUE theta is radians, otherwise degrees}
 }
 \value{
-
+foo
 }
 \description{
 Rotate object using matrix algebra.

@@ -1,0 +1,32 @@
+---
+title: "Introduction to fractaltree"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{intro}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(fractaltree)
+
+leaf <- local({
+  matrix(
+    c(0, 0, 0, 1,
+      0, 0.45, 0.12, 0.80,
+      0, 0.85, -0.04, 0.95),
+    byrow = TRUE, ncol = 4
+  )
+})
+
+fractal_tree(leaf, depth = 6, 0.7) %>%
+  dplyr::mutate(i = i + rnorm(nrow(.), 0, 0.7)) %>%
+  plot_tree(colors = c("brown", "darkgreen"))
+```

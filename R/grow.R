@@ -3,9 +3,9 @@
 #'
 #' @param m input matrix of
 #' @param leaf leaf shape, a matrix with 4 columns for x, y, xend, yend
-#' @param growth_fraction
+#' @param growth_fraction How much to grow each leaf
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 grow <- function(m, leaf, growth_fraction = 1){
@@ -18,6 +18,10 @@ grow <- function(m, leaf, growth_fraction = 1){
   do.call(rbind, zz)
 }
 
+
+globalVariables(c("x", "y", "xend", "yend", "i"))
+
+#' @importFrom magrittr set_colnames
 leaf_names <- function(m){
   m %>% set_colnames(c("x", "y", "xend", "yend"))
 }
@@ -26,9 +30,8 @@ leaf_names <- function(m){
 #'
 #' @inheritParams grow
 #' @param depth Integer that specifies the depth (height) of the tree, i.e. the number of loops
-#' @param growth_fraction
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 fractal_tree <- function(leaf, depth, growth_fraction){
@@ -50,10 +53,10 @@ fractal_tree <- function(leaf, depth, growth_fraction){
 #' Plot the tree
 #'
 #' @param x A tree object, resulting from `grow_tree()`
-#' @param colors A vector of lenght two with start and end colour
-#' @param colours
+#' @param colors A vector of length two with start and end color
+#' @param colours A synonym for `color`
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 #' @importFrom ggplot2 ggplot geom_segment coord_fixed theme_void scale_color_gradient aes

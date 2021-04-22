@@ -9,10 +9,10 @@ kaleidoscope(m, n)
 \arguments{
 \item{m}{Input matrix}
 
-\item{xy}{a Vector of length two with x and y component}
+\item{n}{Number of repetitions}
 }
 \value{
-
+foo
 }
 \description{
 Translate object in x and y plane

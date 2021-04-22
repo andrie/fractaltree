@@ -11,10 +11,10 @@ fractal_tree(leaf, depth, growth_fraction)
 
 \item{depth}{Integer that specifies the depth (height) of the tree, i.e. the number of loops}
 
-\item{growth_fraction}{}
+\item{growth_fraction}{How much to grow each leaf}
 }
 \value{
-
+foo
 }
 \description{
 Grow a tree

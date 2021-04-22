@@ -5,7 +5,7 @@
 #' @param theta Angle of rotation
 #' @param radians If TRUE theta is radians, otherwise degrees
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 #' @family Rotate, translate and shrink
@@ -37,7 +37,7 @@ rotate <- function(m, theta = 0, radians = FALSE){
 #' @inheritParams rotate
 #' @param s scaling factor
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 #' @family Rotate, translate and shrink
@@ -52,7 +52,7 @@ shrink <- function(m, s = 0){
 #' @inheritParams rotate
 #' @param xy a Vector of length two with x and y component
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 #' @family Rotate, translate and shrink
@@ -69,9 +69,9 @@ translate <- function(m, xy) {
 #' Translate object in x and y plane
 #'
 #' @inheritParams rotate
-#' @param xy a Vector of length two with x and y component
+#' @param n Number of repetitions
 #'
-#' @return
+#' @return foo
 #' @export
 #'
 #' @family Rotate, translate and shrink

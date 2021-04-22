@@ -12,7 +12,7 @@ translate(m, xy)
 \item{xy}{a Vector of length two with x and y component}
 }
 \value{
-
+foo
 }
 \description{
 Translate object in x and y plane
